@@ -1,0 +1,21 @@
+# Ignorar arquivos e diretórios específicos
+*.log          # Ignorar arquivos de log
+*.tmp          # Ignorar arquivos temporários
+*.swp          # Ignorar arquivos de swap do Vim
+
+# Ignorar arquivos gerados pelo sistema
+.DS_Store      # Ignorar arquivos do sistema Mac
+Thumbs.db      # Ignorar arquivos do sistema Windows
+
+# Ignorar diretórios de ambiente
+env/            # Ignorar diretórios de ambiente virtual (Python)
+venv/           # Outro nome comum para ambientes virtuais (Python)
+node_modules/   # Ignorar dependências do Node.js
+
+# Ignorar arquivos de configuração específicos
+*.pyc          # Ignorar arquivos de bytecode do Python
+*.class        # Ignorar arquivos compilados do Java
+
+# Ignorar arquivos de configuração do IDE
+.vscode/       # Ignorar configuração do Visual Studio Code
+.idea/         # Ignorar configuração do IntelliJ IDEA
