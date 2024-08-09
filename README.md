@@ -1,13 +1,17 @@
 
+# Análise de dados climáticos e correlações com casos de arboviroses
 
-
-https://www.kaggle.com/datasets/joaopedromedeiros/climatechikungunya-zika-and-dengue?select=all_arb_cid.csv
+Será que com os dados obtidos do seguinte [database](https://www.kaggle.com/datasets/joaopedromedeiros/climatechikungunya-zika-and-dengue?select=all_arb_cid.csv) é possível prevermos quando é esperado um aumento no caso de arboviroses na microregião da Zona da Mata/MG?
 
 DICIONÁRIO - SINAM
 
 1. **Unnamed: 0**: Índice da linha no DataFrame (pode ser descartado se não for necessário).
 
-2. **CLASSI_FIN**: Classificação final do caso. 
+2. **CLASSI_FIN**: Classificação final do caso. No dicionário que encontrei do SINAM, há apenas esclarecimento sobre o que significa as pontuações de classificação final em DENGUE, não fala sobre as outras duas, limitando a utilização do dado.
+
+Seria algo como:
+
+DENGUE
 5.descartado
 10.Dengue
 11.Dengue com sinais de alarme
@@ -22,7 +26,15 @@ DICIONÁRIO - SINAM
 
 6. **COUFINF**: Código da unidade federativa de infecção. No exemplo, NaN (não se aplica).
 
-7. **CRITERIO**: Critério de confirmação do caso. No exemplo, 1.0 (provavelmente "clínico").
+7. **CRITERIO**: Critério de confirmação do caso. No dicionário que encontrei do SINAM, há apenas esclarecimento sobre o que significa as pontuações de critério em DENGUE, não fala sobre as outras duas, limitando a utilização do dado.
+
+Seria algo como:
+DENGUE
+5. Descartado
+10. Dengue
+11. Dengue com sinais de alarme
+12. Dengue grave
+13. Chikungunya
 
 8. **CS_ESCOL_N**: Escolaridade do paciente. No exemplo, 9.0 (pode representar um nível de escolaridade específico).
 
